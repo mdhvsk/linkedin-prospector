@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Hyperlink Collector",
+    "version": "1.0",
+    "description": "Collects all hyperlinks on the current page",
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
